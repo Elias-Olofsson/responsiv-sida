@@ -1,0 +1,57 @@
+body{
+  background: white;
+}
+h1{
+  background: lightgrey;
+  text-align:center;
+  top:0;
+  left:0;
+}
+ol{
+  top:10vh;
+  left:0;
+}
+#bildEtt{
+  height:auto;
+  width: 50%;
+}
+#sida2bild1{
+  float: left;
+  width:50vw;
+  height:25vw;
+}
+#sida2bild2{
+  float: left;
+  width:50vw;
+  height:25vw;
+}
+/*dessa tar bort float uppdelningarna som bilderna gör för att få texten bredvid sig*/
+p:nth-child(3){
+  clear: both;
+}
+
+p:nth-child(6){
+  clear: both;
+}
+@media only screen and (min-width: 601px) {
+  nav {
+    float: left;
+  }
+  main {
+    width: 100%;
+  }
+  #vanstertext {
+    float:left;
+    width: 40%;
+  }
+  sidebar {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+}
+
+footer{
+  clear: both;
+  text-align:center;
+}
